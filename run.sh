@@ -1,3 +1,7 @@
 #!/bin/bash
 
-docker run -it --rm nvim-dev-env
+VOLUMES=(
+    "-v" "$HOME/git/yash:/root/yash"
+)
+
+docker run -it --rm "${VOLUMES[@]}" nvim-dev-env
