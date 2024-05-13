@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 RUN apk update --no-cache && \
-    apk add --no-cache git neovim gcc
+    apk add --no-cache git neovim gcc musl-dev
 
 RUN chmod -R 777 /root
 
