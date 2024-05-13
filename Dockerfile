@@ -1,7 +1,7 @@
-FROM archlinux:latest
+FROM alpine:latest
 
-RUN pacman -Syyuu --noconfirm && \
-    pacman -S --noconfirm git neovim gcc
+RUN apk update --no-cache && \
+    apk add --no-cache git neovim gcc
 
 RUN chmod -R 777 /root
 
