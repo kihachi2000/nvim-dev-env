@@ -1,0 +1,36 @@
+.resource-selector.active, .summary-resource-selector.active {
+    background-color: #FF8400;
+}
+
+.resource-selector, .summary-resource-selector {
+    font-size: 14px;
+}
+
+#resourceSelector, #summary-resource-selector {
+    margin-top: 25px;
+}
+
+#summary-questionnaire-div input {
+    background-color: white;
+}
+
+.permissions-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.disable-access-row {
+    background-color: #ccc;
+    font-style: italic
+}
+
+td[field="description"] > div {
+    word-break: break-all !important;
+    word-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+.near-exp-access-row {
+    background-color: #ffca7a;
+    font-style: italic
+}
