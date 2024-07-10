@@ -7,6 +7,7 @@ RUN chmod -R 777 /root
 
 WORKDIR /root
 COPY ./nvim .config/nvim
+COPY ./examples examples
 RUN nvim --headless +"Lazy! sync" +qa
 RUN git clone https://github.com/thombergs/code-examples.git
 
